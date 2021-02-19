@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ahsayat" android:icon="@drawable/ic_a7sayat"
+        android:title="احصائيات"
+        />
+<item android:id="@+id/mnabh" android:icon="@drawable/ic_time"
+    android:title="منبه التسبيح"/>
+    <item android:id="@+id/tasbe7" android:icon="@drawable/ic_tasbe7"
+        android:title="مسبحه"
+        />
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraund1"
+>
+
+
+    <ImageView
+        android:backgroundTint="@color/white"
+        android:id="@+id/titlesoura"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/souratitle"
+        android:scaleType="fitXY"
+        android:fontFamily="@font/quran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/soraNameQuran"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/quran"
+        app:layout_constraintTop_toTopOf="@id/titlesoura"
+        app:layout_constraintBottom_toBottomOf="@id/titlesoura"
+        app:layout_constraintStart_toStartOf="@id/titlesoura"
+        app:layout_constraintEnd_toEndOf="@id/titlesoura"
+        tools:text="اسم الصوره" />
+
+    <TextView
+        android:id="@+id/psmala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/almushaf"
+        android:text="بسم الله الرحمن الرحيم "
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titlesoura" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyalView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/psmala"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:itemCount="10000"
+        tools:listitem="@layout/activity_quran" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

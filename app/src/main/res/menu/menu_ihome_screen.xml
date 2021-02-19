@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="القران الكريم"
+    android:id="@+id/Navigation_Quran"
+   android:icon="@drawable/ic_quran"
+    />
+    <item android:title="الاحاديث الشريفه"
+            android:id="@+id/Navigation_hadeth"
+android:icon="@drawable/ic_hadeth"
+        />
+    <item android:title="التسبيح"
+        android:id="@+id/Navigation_tasbe7"
+        android:icon="@drawable/ic_tasbe7"
+        />
+</menu>

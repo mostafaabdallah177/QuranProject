@@ -1,0 +1,19 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Holy_Quran</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TOTal"></string>
+    <string-array name="tasb7at">
+        <item> الله اكبر </item>
+        <item> سبحان لله </item>
+        <item>الحمدلله </item>
+        <item> لا حول ولا قوة الا بالله</item>
+        <item>لا اله الا الله</item>
+    </string-array>
+
+
+    <style name="mySpinnerItemStyle"
+        parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:background">@color/gold</item>
+    </style>
+</resources>

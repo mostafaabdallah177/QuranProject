@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuranFragment"
+    android:background="@drawable/mainbackground"
+    >
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/quran_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".33"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyal_view_Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layoutDirection="rtl"
+        android:layout_marginBottom="20sp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Logo"
+        app:spanCount="3"
+        tools:itemCount="100"
+        tools:listitem="@layout/items_actitiy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
