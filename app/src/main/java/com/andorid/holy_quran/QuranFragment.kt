@@ -146,6 +146,7 @@ class QuranFragment : Fragment() {
                 startDetailsSoura(position,souraName)
                     showDialogFargment()
             }
+
             private fun startDetailsSoura(postion: Int, name: String) {
                 var FileName =""+ (postion + 1) +".txt"
                 var intent = Intent(context, QuranActivity::class.java)
